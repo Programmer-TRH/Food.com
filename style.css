@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+p{
+    font-weight: 300;
+    color: #111 ;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    background-image: url(./img/asparagus-2169305_1920.jpg);
+    background-size: cover;
+}
+.banner .content{
+    max-height: 900px;
+    text-align: center;
+}
+.banner .content h2{
+    font-size: 5em;
+    color: #fff;
+}
+.banner .content p{
+    font-size: 1em;
+    color: #fff;
+}
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 6px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left:   0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+header .logo{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+.sticky .logo{
+    color: rgb(17, 17, 17);
+}
+header .logo span{
+    color: #ff0157;
+}
+header .navigation{
+    position: relative;
+    display: flex;
+}
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 400;
+}
+.sticky .navigation li a{
+    color: black;
+}
+.navigation li a:hover{
+    color: #ff0157;
+}
+section{
+    padding: 100px;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50{
+    position: relative;
+    width: 48%;
+}
+.titletext{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+.titletext span{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.row .col50 .imgBx{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.row .col50 .imgBx img{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 105%;
+    height: 100%;
+    object-fit: cover;
+}
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .content .box{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+.menu .content .box .imgbx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.menu .content .box .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu .content .box .text{
+    padding: 15px 0 5px;
+}
+.menu .content .text h3{
+    font-weight: 400;
+    color: #111;   
+}
+.expert .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.expert .content .box{
+    width: 250px;
+    margin: 15px;
+   ;
+}
+.expert .content .box .imgbx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.expert .content .box .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.expert .content .box .tex{
+    padding: 10px 0 5px;
+}
+.expert .content .box .tex h4{
+    font-weight: 400;
+    color: #111;
+    font-size: 2em;
+}
+
+.testimonials{
+    background-image: url(./img/blueberries-690072_1920.jpg);
+    background-size: cover;
+}
+.white .titletext,
+.white p{
+    color: #fff;
+}
+.testimonials .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px; 
+}
+.testimonials .content .box{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.testimonials .content .box .imgbx{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.testimonials .content .box .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.testimonials .content .box .tex{
+   text-align: center;
+}
+.testimonials .content .box .tex p{
+    color: #666;
+    font-style: italic;
+}
+.testimonials .content .box .tex h4{
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    color: #ff0157;
+    font-weight: 600;
+}
+.right{
+    align-items: right;
+}
+.contact{
+    background-image: url(./img/salad-2068220_1280.jpg);
+    background-size: cover;
+    margin-top: 10px;
+}
+.contact .titletext{
+    font-weight: 500;
+}
+.contact .title p{
+    color: black;
+    font-weight: 500;
+}
+.contactform{
+    padding: 60px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 30px;
+    border-radius: 5%;
+}
+
+.contactform h2{
+    color: #111;
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+
+}
+
+.inputbox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.inputbox input, textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+.copyrighttext{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.01);
+    text-align: center;
+}
+.copyrighttext p{
+    color: #333;
+}
+.copyrighttext p{
+    color: #333;
+}
+
+@media (max-width:991px)
+{
+    header,
+    header.sticky
+    {
+        padding: 10px 20px;
+    }
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fff;
+    }
+    header .navigation li{
+        margin-left: 0;
+    }
+    header .navigation li a{
+        color: #111;
+        font-size: 1.6em;
+    }
+    .menutoggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-image: url(./img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menutoggle.active{
+        background-image: url(./img/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer; 
+    }
+    header.sticky .menutoggle{
+        filter: invert(1);
+    }
+    section{
+        padding: 20px;
+    }
+    .banner .content h2{
+        font-size: 3em;
+        columns: #111;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row .col50{
+        position: relative;
+        width: 100%;
+    }
+    .row .col50 .imgBx{
+        height: 300px;
+        margin-top: 20px;
+    }
+    .menu .content {
+        margin-top: 20px;
+    }
+    .menu .content .box{
+        margin: 10px;
+    }
+    .menu .content .box .imgbx{
+        height: 260px;
+    }
+    .title{
+        text-align: center;
+    }
+    titletext{
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    .testimonials .content .box{
+        margin: 10px;
+        padding: 20px;
+    }
+    .contactform{
+        padding: 35px 40px;
+        background: #fff;
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:480px){
+    .banner .content h2{
+        font-size: 2.2em;
+        color: #fff;
+    }
+}
